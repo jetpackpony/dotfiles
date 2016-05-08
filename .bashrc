@@ -130,3 +130,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# Include google secrets for ponypod
+if [ -f "$HOME/projects/ponypod/.dev_secrets" ]; then
+  export GOOGLE_CLIENT_ID=""
+  export GOOGLE_CLIENT_SECRET=""
+  . "$HOME/projects/ponypod/.dev_secrets"
+fi
