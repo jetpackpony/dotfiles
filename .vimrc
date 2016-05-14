@@ -199,5 +199,5 @@ set ignorecase
 set smartcase
 
 " Auto change current directory to current file's
-set autochdir
+"set autochdir
 

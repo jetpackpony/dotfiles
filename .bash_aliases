@@ -16,3 +16,5 @@ alias cc="tr -d '\n' | xclip -selection clipboard"
 # Up the directory
 alias ..='cd ../'
 
+# Bundle exec rspec shorthand with clear before it
+alias bspec='clear && bundle exec rspec'
