@@ -187,6 +187,7 @@ set tabpagemax=6
 " Move backup and swap files to /tmp
 set backupdir=./.backup,~/.backup,.,/tmp
 set directory=./.backup,~/.backup,.,/tmp
+set undodir=./.backup,~/.backup,.,/tmp
 
 " Something with tabs
 set smarttab
