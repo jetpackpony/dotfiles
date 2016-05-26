@@ -161,6 +161,8 @@ if has("autocmd")
      \ 'AcceptSelection("e")': ['<c-t>'],
      \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
      \ }
+" CTRLP index hidden files
+let g:ctrlp_show_hidden = 1
 
 " Show search results while typing
 set incsearch
