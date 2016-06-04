@@ -1,9 +1,0 @@
-Host gitlab.petrosoftinc.com
-	IdentityFile ~/.ssh/anton_id_rsa
-
-Host pospro804.auto.petrosoftinc.com
-	IdentityFile ~/.ssh/anton_id_rsa
- 
-Host 172.21.191.152
-	IdentityFile ~/.ssh/anton_id_rsa
-

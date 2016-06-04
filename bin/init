@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Create a backup dir for vim tmp files
+mkdir ~/.backup
+chmod 777 ~/.backup
+
+# Clone Vundle and install the plugins in Vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+
