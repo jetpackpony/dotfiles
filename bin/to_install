@@ -1,2 +1,14 @@
 vim-gtk
 tmux
+nodejs
+
+# Ruby dependencies
+autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+rbenv
+ruby-build
+gem install bundler
+
+# Capybara-webkit dependencies
+qt5-default libqt5webkit5-dev gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x
+
+
