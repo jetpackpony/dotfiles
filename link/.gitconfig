@@ -9,5 +9,6 @@
 	excludesfile = ~/.gitignore_global
 [diff]
 	tool = vimdiff
+	compactionHeuristic = true
 [difftool]
 	prompt = false
