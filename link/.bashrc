@@ -136,3 +136,7 @@ if [ -f "$HOME/projects/ponypod/.dev_secrets" ]; then
   export GOOGLE_CLIENT_SECRET=""
   . "$HOME/projects/ponypod/.dev_secrets"
 fi
+
+# Add Apps directory to PATH
+export PATH=$HOME/Apps:$PATH
+
