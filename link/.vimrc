@@ -116,6 +116,7 @@ Plugin 'gmarik/vundle'
 Plugin 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plugin 'altercation/vim-colors-solarized' " solarized theme 
 Plugin 'kchmck/vim-coffee-script' " coffeescript support
+Plugin 'mustache/vim-mustache-handlebars' " handlebars syntax plugin
 " Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 " Plugin 'benmills/vimux'
 " Plugin 'tpope/vim-fugitive' " the ultimate git helper
@@ -163,6 +164,9 @@ if has("autocmd")
      \ }
 " CTRLP index hidden files
 let g:ctrlp_show_hidden = 1
+
+" Ignore files in tmp dirs and stuff
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " Show search results while typing
 set incsearch
