@@ -228,5 +228,6 @@ autocmd BufWinLeave * call clearmatches()
 " Auto close the brackets
 inoremap ( ()<Esc>:let leavechar=")"<CR>i
 inoremap [ []<Esc>:let leavechar="]"<CR>i
-inoremap { {<CR><BS>}<Esc>ko
+inoremap { {}<Esc>:let leavechar="}"<CR>i
 imap <C-j> <Esc>:exec "normal f" . leavechar<CR>a
+
