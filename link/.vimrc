@@ -117,7 +117,8 @@ Plugin 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plugin 'altercation/vim-colors-solarized' " solarized theme 
 Plugin 'kchmck/vim-coffee-script' " coffeescript support
 Plugin 'mustache/vim-mustache-handlebars' " handlebars syntax plugin
-" Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
+Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
+Plugin 'rhysd/vim-crystal' " crystal-lang support
 " Plugin 'benmills/vimux'
 " Plugin 'tpope/vim-fugitive' " the ultimate git helper
 " Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in
@@ -165,6 +166,12 @@ if has("autocmd")
 " CTRLP index hidden files
 let g:ctrlp_show_hidden = 1
 
+" Ignore some files for ctrlp
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.?(git|hg|svn|node_modules|bower_components)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
+
 " Ignore files in tmp dirs and stuff
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
@@ -177,9 +184,7 @@ if maparg('<C-L>', 'n') ==# ''
 endif
 
 " Show some lines around coursor
-if !&scrolloff
-  set scrolloff=10
-endif
+set scrolloff=10
 
 " Reload the file if changed outside of vim
 set autoread
