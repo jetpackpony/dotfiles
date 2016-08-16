@@ -236,3 +236,9 @@ inoremap [ []<Esc>:let leavechar="]"<CR>i
 inoremap { {}<Esc>:let leavechar="}"<CR>i
 imap <C-j> <Esc>:exec "normal f" . leavechar<CR>a
 
+" Paste from 0 buffer without typing "
+let mapleader = "\<Space>"
+noremap <Leader>p "0p
+noremap <Leader>P "0P
+vnoremap <Leader>p "0p
+
