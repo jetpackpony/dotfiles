@@ -19,3 +19,8 @@ alias ..='cd ../'
 # Bundle exec rspec shorthand with clear before it
 alias brspec='clear && bundle exec rspec'
 alias brake='clear && bundle exec rake'
+
+# Switch between solarized light and dark
+alias dark='~/gnome-terminal-colors-solarized/set_dark.sh Solarized'
+alias light='~/gnome-terminal-colors-solarized/set_light.sh Solarized'
+
