@@ -104,12 +104,6 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-" Disable hjkl
-noremap h <NOP>
-noremap j <NOP>
-noremap k <NOP>
-noremap l <NOP>
-
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
