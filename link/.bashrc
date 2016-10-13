@@ -140,3 +140,5 @@ fi
 # Add Apps directory to PATH
 export PATH=$HOME/Apps:$PATH
 
+# Disable terminal scroll lock
+stty -ixon
