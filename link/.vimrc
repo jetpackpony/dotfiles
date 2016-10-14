@@ -114,11 +114,12 @@ Plugin 'gmarik/vundle'
 
 " list all plugins that you'd like to install here
 Plugin 'ctrlpvim/ctrlp.vim' " fuzzy find files
-Plugin 'altercation/vim-colors-solarized' " solarized theme 
+Plugin 'altercation/vim-colors-solarized' " solarized theme
 Plugin 'kchmck/vim-coffee-script' " coffeescript support
 Plugin 'mustache/vim-mustache-handlebars' " handlebars syntax plugin
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'rhysd/vim-crystal' " crystal-lang support
+Plugin 'bronson/vim-trailing-whitespace' " crystal-lang support
 " Plugin 'benmills/vimux'
 " Plugin 'tpope/vim-fugitive' " the ultimate git helper
 " Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in
@@ -150,7 +151,7 @@ set number
 if has("autocmd")
   au VimEnter,InsertLeave * silent execute '!echo -ne "\e[2 q"' | redraw!
   au InsertEnter,InsertChange *
-    \ if v:insertmode == 'i' | 
+    \ if v:insertmode == 'i' |
     \   silent execute '!echo -ne "\e[6 q"' | redraw! |
     \ elseif v:insertmode == 'r' |
     \   silent execute '!echo -ne "\e[4 q"' | redraw! |
@@ -158,7 +159,7 @@ if has("autocmd")
   au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
  endif
 
- " CTRLP open in a new tab on hitting enter 
+ " CTRLP open in a new tab on hitting enter
  let g:ctrlp_prompt_mappings = {
      \ 'AcceptSelection("e")': ['<c-t>'],
      \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
@@ -215,14 +216,6 @@ set smartcase
 
 set splitbelow
 set splitright
-
-" Highlight trailing whitespace
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
 
 " Auto close the brackets
 inoremap ( ()<Esc>:let leavechar=")"<CR>i
