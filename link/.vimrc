@@ -120,6 +120,8 @@ Plugin 'mustache/vim-mustache-handlebars' " handlebars syntax plugin
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'rhysd/vim-crystal' " crystal-lang support
 Plugin 'bronson/vim-trailing-whitespace' " crystal-lang support
+Plugin 'tpope/vim-surround' " surround with quotes and stuff
+Plugin 'jiangmiao/auto-pairs' " pair brackets, quotes, etc
 " Plugin 'benmills/vimux'
 " Plugin 'tpope/vim-fugitive' " the ultimate git helper
 " Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in
