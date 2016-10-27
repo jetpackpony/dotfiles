@@ -12,3 +12,7 @@
 	compactionHeuristic = true
 [difftool]
 	prompt = false
+[alias]
+	unstage = reset HEAD --
+	graph = log --oneline --graph
+	last = log -1 HEAD -p
