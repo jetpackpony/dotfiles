@@ -137,7 +137,7 @@ set tabstop=2
 " Solarized settings
 syntax enable
 let hour = strftime("%H")
-if 6 <= hour && hour < 19
+if 10 <= hour && hour < 16
   set background=light
 else
   set background=dark
