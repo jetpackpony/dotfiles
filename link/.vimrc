@@ -231,3 +231,7 @@ noremap <Leader>p "0p
 noremap <Leader>P "0P
 vnoremap <Leader>p "0p
 
+" Add file path to status line
+set statusline+=%f
+set laststatus=2
+
