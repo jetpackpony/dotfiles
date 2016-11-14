@@ -136,12 +136,14 @@ set tabstop=2
 
 " Solarized settings
 syntax enable
-let hour = strftime("%H")
-if 10 <= hour && hour < 16
-  set background=light
-else
-  set background=dark
-endif
+"Enable the switch of the background
+"let hour = strftime("%H")
+"if 10 <= hour && hour < 16
+"  set background=light
+"else
+"  set background=dark
+"endif
+set background=dark
 colorscheme solarized
 call togglebg#map("<F5>")
 
