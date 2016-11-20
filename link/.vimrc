@@ -173,7 +173,7 @@ let g:ctrlp_show_hidden = 1
 
 " Ignore some files for ctrlp
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.?(git|hg|svn|node_modules|bower_components)$',
+  \ 'dir':  '\v[\/]\.?(git|hg|svn|node_modules|bower_components|.sass-cache)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
 
