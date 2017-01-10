@@ -210,6 +210,9 @@ set backupdir=./.backup,~/.backup,.,/tmp
 set directory=./.backup,~/.backup,.,/tmp
 set undodir=./.backup,~/.backup,.,/tmp
 
+" Disable safe write to allow dev servers to pick changes
+set backupcopy=yes
+
 " Something with tabs
 set smarttab
 
