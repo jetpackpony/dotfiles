@@ -122,8 +122,9 @@ Plugin 'rhysd/vim-crystal' " crystal-lang support
 Plugin 'bronson/vim-trailing-whitespace' " crystal-lang support
 Plugin 'tpope/vim-surround' " surround with quotes and stuff
 Plugin 'jiangmiao/auto-pairs' " pair brackets, quotes, etc
-Plugin 'isRuslan/vim-es6' " es6 syntax highlihgt
 Plugin 'cakebaker/scss-syntax.vim' " sass syntax highlihgt
+Plugin 'pangloss/vim-javascript' " js syntax
+Plugin 'mxw/vim-jsx' " jsx for react syntax
 " Plugin 'benmills/vimux'
 " Plugin 'tpope/vim-fugitive' " the ultimate git helper
 " Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in
@@ -254,3 +255,6 @@ function! s:DiffWithSaved()
   exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
 endfunction
 com! DiffSaved call s:DiffWithSaved()
+
+" Allow JSX in normal JS files
+let g:jsx_ext_required = 0
