@@ -119,6 +119,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+### Add rbenv for managing ruby versions
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
