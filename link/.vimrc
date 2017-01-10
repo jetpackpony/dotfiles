@@ -200,6 +200,9 @@ set history=1000
 " Fewer tabs
 set tabpagemax=6
 
+" Show tab line all the time
+set showtabline=2
+
 " Move backup and swap files to /tmp
 set backupdir=./.backup,~/.backup,.,/tmp
 set directory=./.backup,~/.backup,.,/tmp
