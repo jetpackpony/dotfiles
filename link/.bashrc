@@ -144,3 +144,6 @@ export PATH=$HOME/Apps:$PATH
 
 # Disable terminal scroll lock
 stty -ixon
+
+export NVM_DIR="/home/jetpackpony/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
