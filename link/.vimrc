@@ -125,6 +125,7 @@ Plugin 'jiangmiao/auto-pairs' " pair brackets, quotes, etc
 Plugin 'cakebaker/scss-syntax.vim' " sass syntax highlihgt
 Plugin 'pangloss/vim-javascript' " js syntax
 Plugin 'mxw/vim-jsx' " jsx for react syntax
+Plugin 'mattn/emmet-vim' " emmet for faster html/css typing
 " Plugin 'benmills/vimux'
 " Plugin 'tpope/vim-fugitive' " the ultimate git helper
 " Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in
@@ -258,3 +259,17 @@ com! DiffSaved call s:DiffWithSaved()
 
 " Allow JSX in normal JS files
 let g:jsx_ext_required = 0
+
+" Show as much of the last line as possible
+set display +=lastline
+
+" Show non-printables
+set list
+if has('multi_byte') && &encoding ==# 'utf-8'
+  let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
+else
+  let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
+endif
+
+" Redefine emmet leader
+let g:user_emmet_leader_key=','
