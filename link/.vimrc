@@ -273,3 +273,13 @@ endif
 
 " Redefine emmet leader
 let g:user_emmet_leader_key=','
+
+" Set spell checking for markdown
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.markdown setlocal spell
+
+hi SpellBad cterm=underline ctermfg=lightred ctermbg=black
+hi SpellCap cterm=underline ctermfg=lightred ctermbg=black
+hi SpellRare cterm=underline ctermfg=lightred ctermbg=black
+hi SpellLocal cterm=underline ctermfg=lightred ctermbg=black
+
