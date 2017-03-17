@@ -147,3 +147,7 @@ stty -ixon
 
 export NVM_DIR="/home/jetpackpony/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+### Environment for Softek project
+DEVELOPMENT_MODE="true"
+CONFIG_NAME="/home/jetpackpony/projects/softek/andropium/android-appium/src/main/resources/config-anton.properties"

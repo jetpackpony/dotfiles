@@ -29,3 +29,14 @@ fi
 
     PATH="/opt/Unity/Editor/Data/Tools:$PATH"
     PATH="/opt/Unity:$PATH"
+
+
+    ### Add genymotion to path
+    if [ -d "/opt/genymobile/genymotion" ] ; then
+      PATH="/opt/genymobile/genymotion:$PATH"
+    fi
+
+    ### Add tmux layouts to PATH
+    if [ -d "$HOME/.dotfiles/tmux_layouts" ] ; then
+      PATH="$HOME/.dotfiles/tmux_layouts:$PATH"
+    fi
