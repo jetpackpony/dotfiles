@@ -1,11 +1,9 @@
 #!/bin/sh
+cd /home/jetpackpony/projects/softek
 tmux has-session -t softek
 if [ $? != 0 ]; then
   tmux new-session -s softek -n vim -d
-  tmux send-keys -t softek 'cd /home/jetpackpony/projects/softek' C-m
-  tmux send-keys -t softek 'vim' C-m
+  tmux send-keys -t softek 'vim' Enter
   tmux split-window -h -t softek
-  tmux send-keys -t softek:0.1 'cd /home/jetpackpony/projects/softek' C-m
-  tmux send-keys -t softek:0.1 'git status' C-m
 fi
 tmux attach -t softek
