@@ -1,0 +1,10 @@
+#!/bin/sh
+cd /home/jetpackpony/projects/questessence/app/QuestEssence
+tmux has-session -t quest
+if [ $? != 0 ]; then
+  tmux new-session -s quest -n vim -d
+  tmux send-keys -t quest 'vim' Enter
+  tmux split-window -h -t quest
+  tmux send-keys -t quest:vim.2 'git status' Enter
+fi
+tmux attach -t quest
