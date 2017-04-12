@@ -23,8 +23,13 @@ fi
 #if [ -d "$HOME/Android/Sdk" ] ; then
     PATH="$HOME/Android/Sdk:$PATH"
     PATH="$HOME/Android/Sdk/tools:$PATH"
+    PATH="$HOME/Android/Sdk/tools/bin:$PATH"
     PATH="$HOME/Android/Sdk/platform-tools:$PATH"
+    PATH="$HOME/Android/Sdk/build-tools:$PATH"
+    PATH="/opt/android-studio/gradle/gradle-3.2/bin:$PATH"
+    PATH="/opt/android-studio/gradle/gradle-3.2:$PATH"
     export ANDROID_HOME="$HOME/Android/Sdk"
+    export GRADLE_HOME="/opt/android-studio/gradle/gradle-3.2"
 #fi
 
     PATH="/opt/Unity/Editor/Data/Tools:$PATH"
@@ -40,3 +45,7 @@ fi
     if [ -d "$HOME/.dotfiles/tmux_layouts" ] ; then
       PATH="$HOME/.dotfiles/tmux_layouts:$PATH"
     fi
+
+    ### Setup local config for softek mfm
+    export CONFIG_NAME="config-anton1"
+    export DEVELOPMENT_MODE=true
