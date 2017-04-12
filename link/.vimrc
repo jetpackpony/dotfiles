@@ -175,6 +175,9 @@ if has("autocmd")
 " CTRLP index hidden files
 let g:ctrlp_show_hidden = 1
 
+" Search only in the working directory
+let g:ctrlp_working_path_mode = 0
+
 " Ignore some files for ctrlp
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.?(git|hg|svn|node_modules|bower_components|.sass-cache)$',
