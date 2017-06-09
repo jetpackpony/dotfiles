@@ -26,3 +26,5 @@ alias bexec='bundle exec'
 alias dark='~/gnome-terminal-colors-solarized/set_dark.sh Solarized'
 alias light='~/gnome-terminal-colors-solarized/set_light.sh Solarized'
 
+# Git stuff
+alias gtree='git log --graph --decorate --oneline --all'
